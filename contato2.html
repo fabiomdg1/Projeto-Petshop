@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tetty's Dog | Contato</title>
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+    </head>
+    <body>      
+        <!-----------------------------------HEADER ------------------------------------>
+        <header class="banner">
+            <img width="100%" height="300px"src="imagens/banner.jpg" alt="Imagem de cachorros"/>       
+        </header>
+
+        <!-----------------------------------NAV -------------------------------------->
+        <nav>
+            <!--Menu de navegação da página-->
+            <div class="divBotao">
+                <a href="index.html"><img class="imgBotao" src="imagens/botoes/home.png"></a>
+                <a href="creche.html"><img class="imgBotao" src="imagens/botoes/creche.png"></a>
+                <a href="estetica.html"><img class="imgBotao" src="imagens/botoes/estetica.png"></a>
+                <a href="hotel.html"><img class="imgBotao" src="imagens/botoes/hotel.png"></a>
+                <a href="loja.html"><img class="imgBotao" src="imagens/botoes/vendas.png"></a>
+                <a href="contato.html"><img class="imgBotao" src="imagens/botoes/contato.png"></a>
+            </div>
+        </nav>
+
+        <!--Linha usada como divisão e organização do conteúdo-->
+        <div class="linha neutro"></div>
+
+        <!--Form -->
+        <form class="formularioContato">
+            <fieldset class="fieldContato">
+
+<!----------------------------------------------------------Formulário de contato---------------------------------------------------->
+                
+<!-- Inserir imagem do google maps do lado do formulário de contato -->
+                <legend><b>Entre em contato conosco</b></legend>
+
+                <!--Divs contendo apenas labels  -->
+                <div class="alinhamentoContato">
+                    <!--Label Nome-->
+                    <div class="divLabels">
+                        <p><label for="name">Nome:</label><br></p>
+
+                        <!--Label E-mail-->
+                        <p><label for="email">E-mail:</label><br></p>
+
+                        <!--Label Telefone-->
+                        <p><label for="telefone">Telefone: </label><br></p>
+
+                        <!--Label Assunto-->
+                        <p><label for="assunto" id="lb_assunto" name="lb_assunto">Assunto</label></p>
+
+                        <!--Label Mensagem-->
+                        <!-- Necessário retirar <br> do código - VERIFICAR -->
+                        <p><label for="mensagem">Mensagem:</label><br></p>
+                    </div>
+                
+                    <!-- Div contendo apenas inputs -->
+                    <div class="divInputs">
+                        <!--Input Nome-->
+                        <input class="caixaTexto" type="text" id="name" name="name" placeholder="digite seu nome" required>
+                            
+                        <!--Input E-mail-->
+                        <input class="caixaTexto" type="email" id="email" name="email" placeholder="digite seu email" required>
+                            
+                        <!--Input Telefone-->
+                        <input class="caixaTexto" type="tel" id="telefone" name="telefone" placeholder="(__) _____ - ____">
+                            
+                        <!--Input Options-->
+                        <select class="options" id="assunto" name="assunto">
+                            <option>Selecione</option>
+                            <option value="duvida"> Dúvida </option>
+                            <option value="elogio"> Elogio </option>
+                            <option value="reclamacao"> Reclamação</option>
+                            <option value="sugestão"> Sugestão</option>
+                        </select>
+                            
+                        <!--Input Mensagem-->
+                        <textarea class="areaTexto" id="mensagem" name="mensagem" placeholder="digite sua mensagem aqui" rows="5" cols="25"></textarea>
+                    </div>
+                </div>
+
+                <!--Botão Enviar e Limpar-->
+                <input class="botao" type="submit" id="bt_enviar" name="bt_enviar" value="Enviar">
+                <input class="botao" type="reset" id="bt_limpar" name="bt_limpa" value="Limpar">
+
+                <br>
+                
+            </fieldset>            
+        </form>   
+        <!-- Linha utilizada apenas para estilização -->
+        <div class="linha neutro"></div>
+
+        <p class="textoPromocaoCadastro">        
+            <!--Utilização do strong para dar importancia a palavra promoções exclusivas-->
+            Efetue o cadastro no formulário abaixo e receba <strong> *** Promoções Exclusivas !!! ***</strong>
+        </p>
+
+<!---------------------------------------------------------------Formulário de cadastro---------------------------------------------------------->
+<form class="formularioCadastro">
+
+            <!-- Fieldset engloba dois outros fieldset (Cadastro de Cliente e Cadastro do Pet)   -->
+            <fieldset class="fieldCadastro">
+                <legend><b>Cadastro</b></legend>
+
+                <!-------------------- Fieldset Cadastro do Cliente -------------------->
+                <fieldset class="fieldCadCliente">
+                    <legend>Dados do Cliente</legend>
+                   
+                    <!----- Div para alinhamento apenas das labels ----->
+                    <div class="alinhamentoContato">
+                        <!--Label Nome-->
+                        <div class="divLabels">
+                            <p><label for="name">Nome:</label><br></p>
+    
+                            <!--Label E-mail-->
+                            <p><label for="email">E-mail:</label><br></p>
+    
+                            <!--Label Telefone-->
+                            <p><label for="telefone">Telefone: </label><br></p>                               
+                        </div>
+
+                        <!----- Div para alinhamento dos inputs 
+                                com exceção dos labels para meios de contato, 
+                                estes ficam em cima dos inputs ----------------------------->
+
+                        <div class="divInputs">
+                            <!--Input Nome-->
+                            <input class="caixaTexto" type="text" id="name" name="name" placeholder="digite seu nome" required>
+                                
+                            <!--Input E-mail-->
+                            <input class="caixaTexto" type="email" id="email" name="email" placeholder="digite seu email" required>
+                                
+                            <!--Input Telefone-->
+                            <input class="caixaTexto" type="tel" id="telefone" name="telefone" placeholder="(__) _____ - ____">
+
+                            <p><b>Marque como podemos entrar em contato:</b></p><br/>
+
+                            <label for="whatsApp">WhatsApp</label>
+                            <input type="checkbox" id="whatsApp" name="whatsApp"> | 
+                    
+                            <label for="telefone">Telefone</label>
+                            <input type="checkbox" id="telefone" name="telefone"> | 
+                                                        
+                            <label for="email">E-mail</label>
+                            <input type="checkbox" id="email" name="email">
+                        </div>
+                    </div>
+                    <br>
+                </fieldset>
+                <br>
+
+                <!-------------------- Fieldset Cadastro do Pet -------------------->
+                <fieldset class="fieldCadPet">
+                    <legend>Dados do Pet</legend>
+
+                    <!----- Div para alinhamento apenas das labels ----->
+                    <div class="alinhamentoContato">
+                        <!--Label Nome do Pet-->
+                        <div class="divLabels">
+                            <p><label for="nomePet">Nome:</label><br></p>
+    
+                            <!--Label Idade do Pet-->
+                            <p><label for="idadePet">Idade:</label><br></p>
+    
+                            <!--Raça do Pet-->
+                            <p><label for="racaPet">Raça:</label<br></p>
+                               
+                        </div>
+
+                        <!----- Div para alinhamento dos inputs 
+                                com exceção dos labels para input radio, 
+                                estes ficam em cima dos inputs----------------------------->
+
+                        <div class="divInputs">
+                            <!--Input Nome Pet-->
+                            <input class="caixaTexto" type="text" id="namePet" name="nomePet" placeholder="digite o nome do seu pet">
+                                
+                            <!--Input Idade Pet-->
+                            <input class="caixaTexto" type="text" id="idadePet" name="idadePet" placeholder="digite a idade do seu pet" required>
+               
+                            <!--Input Raça Pet-->
+                            <input class="caixaTexto" type="text" id="racaPet" name="racaPet" placeholder="digite a idade do seu pet" required>
+                            
+                            <!--Input RADIO-->
+                            <label for="macho">Macho</label>
+                            <input type="radio" id="macho" name="sexoPet">
+                    
+                            <label for="femea">Fêmea</label>
+                            <input type="radio" id="femea" name="sexoPet">
+                        </div>
+                    </div>                   
+                </fieldset>
+
+                <!--Botão Enviar e Limpar-->
+                <p>
+                    <input  class="botao" type="submit" id="bt_enviar" name="bt_enviar" value="Enviar">
+                    <input class="botao" type="reset" id="bt_limpar" name="bt_limpa" value="Limpar">
+                </p>
+            </fieldset>
+        </form>  
+        
+    <!-----------------------------------FOOTER ------------------------------------>
+    <!--Informações de Contato-->
+    <footer align="center">
+        <!--Utilização do ADDRESS-->
+        <!--Retirado address devido a problemas com alinhamento - VERIFICAR-->
+        <!--<address>-->
+            <h3 align="center">Rua dos Cachorros, nº 123 - Vila Ema - São Paulo - SP - WhatsApp: (11)98051-7425 | (11) 1111-2222 </h3>
+        <!--</address>-->
+        
+        <!--Informações de Copyright-->           
+            &copy; Todos os direitos reservados           
+    </footer>    
+    </body>
+</html>

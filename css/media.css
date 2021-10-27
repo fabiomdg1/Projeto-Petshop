@@ -1,0 +1,18 @@
+/*Largura da pagina do smartphone 900px*/
+@media(max-width: 900px){
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
