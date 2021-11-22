@@ -13,7 +13,7 @@ Desafio de HTML5, CSS3 proposto pela <strong>Soul Code</strong>, EDTECH brasilei
 ## Techs 🛠
 
 - HTML5
-- CSS3
+
 
 ---
 
